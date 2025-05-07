@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Registro</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bootstrap-5.3.5-dist/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>DAWFORM</h1>
+  </header>
+
+  <main class="contenedor  text-center">
+
+    <h1>Formulario de Registro</h1>
+    <div id="mensajeExito">Formulario enviado correctamente.</div>
+
+    <form id="formulario" onsubmit="return false;">
+      <label>Nombre completo:</label><br>
+      <input type="text" id="nombre" class="rounded"><br>
+      <span class="error" id="errorNombre"></span><br>
+
+      <label>Correo electrónico:</label><br>
+      <input type="text" id="correo" class="rounded"><br>
+      <span class="error" id="errorCorreo"></span><br>
+
+      <label>Contraseña:</label><br>
+      <input type="password" id="pass" class="rounded"><br>
+      <span class="error" id="errorPass"></span><br>
+
+      <label>Confirmar contraseña:</label><br>
+      <input type="password" id="pass2" class="rounded"><br>
+      <span class="error" id="errorPass2"></span><br>
+
+      <label>Fecha de nacimiento:</label><br>
+      <input type="date" id="nacimiento" class="rounded"><br>
+      <span class="error" id="errorNacimiento"></span><br>
+
+      <label>Género:</label><br>
+      <input type="radio" name="genero" value="masculino"> Masculino
+      <input type="radio" name="genero" value="femenino"> Femenino<br>
+      <span class="error" id="errorGenero"></span><br>
+
+      <input type="checkbox" id="terminos"> Acepto los términos<br>
+      <span class="error" id="errorTerminos"></span><br><br>
+
+      <button class="btn rounded " type="submit" id="enviar" disabled>Enviar</button>
+    </form>
+
+  </main>
+  <footer>
+    <h2>DAWFORM</h2>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
